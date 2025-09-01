@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restoran Lezat</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #222;
+      padding: 12px 25px;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: orange;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+      transition: 0.3s;
+      padding: 6px 10px;
+      border-radius: 5px;
+    }
+
+    .navbar ul li a:hover {
+      background-color: rgba(255, 165, 0, 0.2);
+      color: orange;
+    }
+
+    .book-btn {
+      background-color: orange;
+      border: none;
+      padding: 8px 18px;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: 0.3s;
+      color: white;
+      font-weight: bold;
+    }
+
+    .book-btn:hover {
+      background-color: #e69500;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 30px 0;
+      font-size: 26px;
+    }
+
+    /* Menu */
+    .menu-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .menu-item {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .menu-item h3 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+    }
+
+    .menu-item p {
+      color: #555;
+      font-weight: bold;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 10px 15px;
+      }
+
+      .navbar ul {
+        justify-content: center;
+        width: 100%;
+      }
+
+      .book-btn {
+        align-self: center;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">🍴 Restoran</div>
+    <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="#">SERVICE</a></li>
+      <li><a href="#">MENU</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+    <button class="book-btn">BOOK A TABLE</button>
+  </nav>
+
+  <h1>Menu Restoran Lezat</h1>
+
+  <!-- Daftar Menu -->
+  <div class="menu-container">
+    <div class="menu-item">
+      <img src="nasigoreng.jpeg" alt="Nasi Goreng">
+      <h3>Nasi Goreng</h3>
+      <p>Rp 25.000</p>
+    </div>
+    <div class="menu-item">
+      <img src="mie ayam.jpg" alt="Mie Ayam">
+      <h3>Mie Ayam</h3>
+      <p>Rp 20.000</p>
+    </div>
+    <div class="menu-item">
+      <img src="sate.jpg" alt="Sate Ayam">
+      <h3>Sate Ayam</h3>
+      <p>Rp 30.000</p>
+    </div>
+    <div class="menu-item">
+      <img src="soto.jpeg" alt="Soto Ayam">
+      <h3>Soto Ayam</h3>
+      <p>Rp 22.000</p>
+    </div>
+    <div class="menu-item">
+      <img src="bakso.jpeg" alt="Bakso">
+      <h3>Bakso</h3>
+      <p>Rp 18.000</p>
+    </div>
+    <div class="menu-item">
+      <img src="ayambakar.jpeg" alt="Ayam Bakar">
+      <h3>Ayam Bakar</h3>
+      <p>Rp 35.000</p>
+    </div>
+  </div>
+
+</body>
+</html>
